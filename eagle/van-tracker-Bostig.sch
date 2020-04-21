@@ -888,93 +888,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="display-hp" urn="urn:adsk.eagle:library:212">
-<description>&lt;b&gt;Hewlett Packard LED Displays&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="HLMP6" urn="urn:adsk.eagle:footprint:12942/1" library_version="3">
-<description>&lt;b&gt;LED&lt;/b&gt;&lt;p&gt;
-2 mm horizontal, RM 2.54 mm</description>
-<wire x1="-2.413" y1="-1.27" x2="2.921" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.921" y1="1.27" x2="2.921" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.921" y1="1.27" x2="-2.413" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="-1.27" x2="-2.413" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="-2.794" y1="-0.889" x2="-2.794" y2="0.889" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-2.794" y1="0.889" x2="-2.413" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="0.889" x2="-2.413" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.794" y1="-0.889" x2="-2.413" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="-0.889" x2="-2.413" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-2.794" y1="0.635" x2="-2.794" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.048" y1="0.508" x2="-3.048" y2="-0.508" width="0.1524" layer="21"/>
-<wire x1="-3.302" y1="0.254" x2="-3.302" y2="-0.254" width="0.1524" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
-<text x="3.429" y="0.127" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.429" y="-1.397" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="HLMP6" urn="urn:adsk.eagle:package:12992/1" type="box" library_version="3">
-<description>LED
-2 mm horizontal, RM 2.54 mm</description>
-<packageinstances>
-<packageinstance name="HLMP6"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="LED" urn="urn:adsk.eagle:symbol:12940/2" library_version="3">
-<wire x1="1.27" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="1.778" x2="-3.429" y2="0.381" width="0.1524" layer="94"/>
-<wire x1="-3.429" y1="0.381" x2="-2.54" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0.762" x2="-3.048" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-3.048" y1="1.27" x2="-3.429" y2="0.381" width="0.1524" layer="94"/>
-<wire x1="-3.302" y1="-0.762" x2="-2.413" y2="-0.381" width="0.1524" layer="94"/>
-<wire x1="-2.413" y1="-0.381" x2="-2.921" y2="0.127" width="0.1524" layer="94"/>
-<wire x1="-2.921" y1="0.127" x2="-3.302" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0.635" x2="-3.302" y2="-0.762" width="0.1524" layer="94"/>
-<text x="3.302" y="-1.524" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.461" y="-1.524" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="K" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="5.08" visible="off" length="point" direction="pas" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="HLMP6" urn="urn:adsk.eagle:component:13019/3" prefix="D" library_version="3">
-<description>&lt;b&gt;LED&lt;/b&gt;&lt;p&gt;
-2mm horizontal</description>
-<gates>
-<gate name="A" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HLMP6">
-<connects>
-<connect gate="A" pin="A" pad="A"/>
-<connect gate="A" pin="K" pad="K"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12992/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="AGILENT TECHNOLOGIES" constant="no"/>
-<attribute name="MPN" value="HLMP-6500" constant="no"/>
-<attribute name="OC_FARNELL" value="1652490" constant="no"/>
-<attribute name="OC_NEWARK" value="40K0088" constant="no"/>
-<attribute name="POPULARITY" value="6" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -5722,13 +5635,12 @@ EC12E series with push-on switch</description>
 <part name="GSM" library="SparkFun-GPS" library_urn="urn:adsk.eagle:library:518" deviceset="ANTENNA" device="GPS-2X7MM" package3d_urn="urn:adsk.eagle:package:38594/1" value="1.575GHz"/>
 <part name="U$1" library="JW_SIM800LMODULE" deviceset="SIM800LMODULE" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5400" device="" package3d_urn="urn:adsk.eagle:package:43365/2"/>
-<part name="FENCE_LED" library="display-hp" library_urn="urn:adsk.eagle:library:212" deviceset="HLMP6" device="" package3d_urn="urn:adsk.eagle:package:12992/1"/>
-<part name="KILL_LED" library="display-hp" library_urn="urn:adsk.eagle:library:212" deviceset="HLMP6" device="" package3d_urn="urn:adsk.eagle:package:12992/1"/>
 <part name="1K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 <part name="SWITCH" library="switch-alps" library_urn="urn:adsk.eagle:library:373" deviceset="EC12E_SW" device="" package3d_urn="urn:adsk.eagle:package:27083/1"/>
 <part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 <part name="1K_OHMS1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 <part name="Q2" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
+<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5400" device="" package3d_urn="urn:adsk.eagle:package:43365/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -5758,12 +5670,6 @@ EC12E series with push-on switch</description>
 </instance>
 <instance part="U$1" gate="G$1" x="73.66" y="81.28" smashed="yes"/>
 <instance part="D1" gate="1" x="33.02" y="33.02" smashed="yes" rot="R90"/>
-<instance part="FENCE_LED" gate="A" x="53.34" y="-17.78" smashed="yes">
-<attribute name="NAME" x="56.642" y="-11.684" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="KILL_LED" gate="A" x="93.98" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="90.678" y="29.464" size="1.778" layer="95"/>
-</instance>
 <instance part="1K_OHMS" gate="G$1" x="2.54" y="-10.16" smashed="yes">
 <attribute name="NAME" x="-3.81" y="-13.7414" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1.27" y="-13.462" size="1.778" layer="96"/>
@@ -5781,6 +5687,7 @@ EC12E series with push-on switch</description>
 <instance part="Q2" gate="G$1" x="15.24" y="10.16" smashed="yes">
 <attribute name="VALUE" x="11.938" y="13.462" size="1.778" layer="96"/>
 </instance>
+<instance part="D2" gate="1" x="101.6" y="60.96" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5826,9 +5733,8 @@ EC12E series with push-on switch</description>
 <wire x1="55.66" y1="86.36" x2="55.66" y2="86.28" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
 <junction x="30.48" y="66.04"/>
-<wire x1="101.6" y1="66.04" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="TB1" gate="G$1" pin="+5V"/>
-<wire x1="101.6" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="101.6" y1="66.04" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -5849,37 +5755,21 @@ EC12E series with push-on switch</description>
 <wire x1="50.8" y1="77.28" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="TB1" gate="G$1" pin="D7"/>
-<pinref part="KILL_LED" gate="A" pin="A"/>
-<wire x1="91.44" y1="12.7" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="12.7" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="TB1" gate="G$1" pin="D6"/>
-<pinref part="FENCE_LED" gate="A" pin="A"/>
-<wire x1="55.88" y1="-2.54" x2="53.34" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-2.54" x2="53.34" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="+VIN1"/>
 <pinref part="SWITCH" gate="G$2" pin="1"/>
 <wire x1="-10.16" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="66.04" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="66.04" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-12.7" y="66.04"/>
-<wire x1="-12.7" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="2"/>
 <wire x1="20.32" y1="48.26" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
 <wire x1="33.02" y1="35.56" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="53.34" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="50.8" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
 <junction x="20.32" y="48.26"/>
 </segment>
 </net>
@@ -5934,20 +5824,10 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="53.34" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="60.96" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="TB1" gate="G$1" pin="COM/GND"/>
-<wire x1="99.06" y1="35.56" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-12.7" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="KILL_LED" gate="A" pin="K"/>
-<wire x1="93.98" y1="30.48" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
-<junction x="99.06" y="35.56"/>
-<pinref part="FENCE_LED" gate="A" pin="K"/>
-<wire x1="53.34" y1="-20.32" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-22.86" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="99.06" y="-12.7"/>
+<wire x1="93.98" y1="60.96" x2="93.98" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-12.7" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND1"/>
 <wire x1="55.626" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="71.12" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
@@ -5979,6 +5859,14 @@ EC12E series with push-on switch</description>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="-VIN1"/>
 <wire x1="-10.16" y1="60.96" x2="-33.02" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-33.02" y="60.96"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="TB1" gate="G$1" pin="+5V"/>
+<wire x1="101.6" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="101.6" y1="58.42" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
