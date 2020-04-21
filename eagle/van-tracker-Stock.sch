@@ -5816,11 +5816,10 @@ wave soldering</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-41.402" y="29.464" size="1.778" layer="91">Kill line in (20A max)</text>
-<text x="-41.402" y="19.558" size="1.778" layer="91">Kill line out (20A max)</text>
 <text x="-41.402" y="50.038" size="1.778" layer="91">Starter switch line in</text>
 <text x="-41.402" y="67.564" size="1.778" layer="91">Battery +</text>
 <text x="-41.402" y="62.484" size="1.778" layer="91">Battery -</text>
+<text x="-41.402" y="19.558" size="1.778" layer="91">Starter switch line out</text>
 </plain>
 <instances>
 <instance part="K1" gate="1" x="20.32" y="20.32" smashed="yes" rot="R180" grouprefs="RELAY"/>
@@ -5880,14 +5879,6 @@ wave soldering</description>
 <wire x1="99.06" y1="86.28" x2="93.76" y2="86.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="K1" gate="2" pin="P"/>
-<wire x1="7.62" y1="25.4" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="27.94" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
-<junction x="-33.02" y="27.94"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <junction x="-33.02" y="17.78"/>
@@ -5927,23 +5918,6 @@ wave soldering</description>
 <wire x1="55.88" y1="2.54" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="K1" gate="1" pin="2"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="C"/>
-<wire x1="33.02" y1="22.86" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="20.32" y="43.18"/>
-<junction x="-33.02" y="48.26"/>
-<wire x1="20.32" y1="48.26" x2="-33.02" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="10K_OHMS" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="43.18" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="K1" gate="1" pin="1"/>
@@ -5951,10 +5925,9 @@ wave soldering</description>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
-<junction x="20.32" y="7.62"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="7.62" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="7.62" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="20.32" y="7.62"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -6045,6 +6018,28 @@ wave soldering</description>
 <pinref part="SWITCH" gate="G$2" pin="1"/>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="+VIN1"/>
 <wire x1="-10.16" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="K1" gate="2" pin="P"/>
+<wire x1="7.62" y1="25.4" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="K1" gate="1" pin="2"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="20.32" y1="38.1" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="22.86" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="48.26" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<junction x="20.32" y="43.18"/>
+<junction x="-33.02" y="48.26"/>
+<pinref part="10K_OHMS" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="43.18" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="38.1" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
+<junction x="20.32" y="38.1"/>
 </segment>
 </net>
 </nets>
