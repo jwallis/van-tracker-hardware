@@ -5132,8 +5132,6 @@ wave soldering</description>
 <parts>
 <part name="1K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 <part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
-<part name="1K_OHMS1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
-<part name="Q2" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5400" device="" package3d_urn="urn:adsk.eagle:package:43365/2"/>
 <part name="10K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 <part name="A42" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="NPN-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2"/>
@@ -5142,8 +5140,9 @@ wave soldering</description>
 <sheets>
 <sheet>
 <plain>
-<text x="4.318" y="26.924" size="1.778" layer="91">External (screw terminal?)
-+12V</text>
+<text x="-3.302" y="26.924" size="1.778" layer="91">External (screw terminal?)
++12V
+max current should be about 0.15A</text>
 <text x="-14.224" y="62.992" size="1.778" layer="91">External (screw terminal?)
 +5V</text>
 <text x="-14.224" y="57.912" size="1.778" layer="91">External (screw terminal?)
@@ -5186,13 +5185,6 @@ mainboard.</text>
 </instance>
 <instance part="Q1" gate="G$1" x="15.24" y="-10.16" smashed="yes">
 <attribute name="VALUE" x="11.938" y="-6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="1K_OHMS1" gate="G$1" x="2.54" y="10.16" smashed="yes">
-<attribute name="NAME" x="-3.81" y="6.5786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-1.27" y="6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="Q2" gate="G$1" x="15.24" y="10.16" smashed="yes">
-<attribute name="VALUE" x="11.938" y="13.462" size="1.778" layer="96"/>
 </instance>
 <instance part="D2" gate="1" x="101.6" y="60.96" smashed="yes" rot="R270"/>
 <instance part="10K_OHMS" gate="G$1" x="2.54" y="-30.48" smashed="yes">
@@ -5242,14 +5234,6 @@ mainboard.</text>
 <wire x1="55.88" y1="2.54" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="20.32" y1="20.32" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="17.78" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="20.32" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <wire x1="55.88" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
@@ -5265,27 +5249,10 @@ mainboard.</text>
 <wire x1="7.62" y1="-10.16" x2="12.7" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="1K_OHMS1" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="B"/>
-<wire x1="7.62" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="2.54" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="E"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="1K_OHMS1" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="10.16" x2="-33.02" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="10.16" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="-12.7" y="10.16"/>
 <pinref part="10K_OHMS" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
@@ -5339,6 +5306,12 @@ mainboard.</text>
 <net name="N$2" class="0">
 <segment>
 <wire x1="70.866" y1="71.374" x2="75.946" y2="71.374" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="25.4" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

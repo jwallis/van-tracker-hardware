@@ -6068,6 +6068,10 @@ Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</descr
 <plain>
 <text x="-41.402" y="32.004" size="1.778" layer="91">Starting line in (20A max)</text>
 <text x="-41.402" y="22.098" size="1.778" layer="91">Starting line out (20A max)</text>
+<text x="-63.5" y="43.18" size="1.778" layer="91">This does NOT WORK.
+The relay never opens because the current
+flows through the relay switch, which is
+normally closed </text>
 </plain>
 <instances>
 <instance part="K1" gate="1" x="20.32" y="22.86" smashed="yes" rot="R180" grouprefs="RELAY"/>
@@ -6117,15 +6121,10 @@ Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</descr
 <net name="N$2" class="0">
 <segment>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="-VIN1"/>
-<wire x1="-10.16" y1="60.96" x2="-10.16" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-17.78" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="20.32" y1="-17.78" x2="20.32" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="-17.78" y1="80.264" x2="-30.48" y2="80.264" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="80.264" x2="-30.48" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="60.96" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-10.16" y="60.96"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -6148,15 +6147,19 @@ Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</descr
 <segment>
 <pinref part="K1" gate="2" pin="P"/>
 <wire x1="7.62" y1="27.94" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="30.48" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-33.02" y="30.48"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<junction x="-33.02" y="20.32"/>
-<pinref part="K1" gate="2" pin="O"/>
-<wire x1="2.54" y1="20.32" x2="-33.02" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="30.48" x2="-10.16" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-10.16" y="30.48"/>
+<wire x1="-10.16" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="K1" gate="1" pin="2"/>
+<wire x1="20.32" y1="40.64" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="33.02" y1="25.4" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="48.26" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<junction x="20.32" y="40.64"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -6245,24 +6248,6 @@ Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</descr
 <wire x1="53.34" y1="-2.54" x2="53.34" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="12V-5V_CONVERTER" gate="G$1" pin="+VIN1"/>
-<pinref part="SWITCH" gate="G$2" pin="1"/>
-<wire x1="-10.16" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="66.04" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-12.7" y="66.04"/>
-<wire x1="-12.7" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="K1" gate="1" pin="2"/>
-<wire x1="20.32" y1="40.64" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="C"/>
-<wire x1="33.02" y1="25.4" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="50.8" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
-<junction x="20.32" y="40.64"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="K1" gate="1" pin="1"/>
@@ -6316,12 +6301,36 @@ Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</descr
 <wire x1="-27.94" y1="66.04" x2="-25.4" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="SWITCH" gate="G$2" pin="1"/>
+<pinref part="12V-5V_CONVERTER" gate="G$1" pin="+VIN1"/>
+<wire x1="-10.16" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="-10.16" y1="-17.78" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-17.78" x2="20.32" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="-33.02" y="20.32"/>
+<pinref part="K1" gate="2" pin="O"/>
+<wire x1="2.54" y1="20.32" x2="-10.16" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="20.32" x2="-33.02" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-10.16" y="20.32"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
