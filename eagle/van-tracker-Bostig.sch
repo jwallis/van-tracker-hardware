@@ -690,79 +690,6 @@ Example Datasheet</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="special" urn="urn:adsk.eagle:library:367">
-<description>&lt;b&gt;Special Devices&lt;/b&gt;&lt;p&gt;
-7-segment displays, switches, heatsinks, crystals, transformers, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="BATTERY" urn="urn:adsk.eagle:footprint:26592/1" library_version="3">
-<description>&lt;B&gt;BATTERY&lt;/B&gt;&lt;p&gt;
-22 mm</description>
-<wire x1="0.635" y1="2.54" x2="0.635" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="0" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-3.175" x2="2.54" y2="-3.175" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-2.54" x2="1.905" y2="-3.81" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="11.43" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="10.2362" width="0.1524" layer="21"/>
-<pad name="-" x="-5.715" y="0" drill="1.016" shape="long"/>
-<pad name="+" x="9.525" y="-5.08" drill="1.016" shape="long"/>
-<pad name="+@1" x="9.525" y="5.08" drill="1.016" shape="long"/>
-<text x="-4.1656" y="6.35" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.445" y="3.81" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.635" y1="-1.27" x2="0" y2="1.27" layer="21"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="BATTERY" urn="urn:adsk.eagle:package:26670/1" type="box" library_version="3">
-<description>BATTERY
-22 mm</description>
-<packageinstances>
-<packageinstance name="BATTERY"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="BATTERY" urn="urn:adsk.eagle:symbol:26591/1" library_version="3">
-<wire x1="-1.27" y1="3.81" x2="-1.27" y2="-3.81" width="0.4064" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="3.81" x2="1.27" y2="-3.81" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="94"/>
-<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-" x="5.08" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
-<pin name="+" x="-5.08" y="0" visible="off" length="short" direction="pwr"/>
-<pin name="+@1" x="-2.54" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BATTERY" urn="urn:adsk.eagle:component:26693/2" prefix="BAT" uservalue="yes" library_version="3">
-<description>&lt;B&gt;BATTERY&lt;/B&gt;</description>
-<gates>
-<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BATTERY">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="+@1" pad="+@1"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:26670/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="3" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="JW_SIM800LMODULE">
 <description>SIM800L Module</description>
 <packages>
@@ -5775,375 +5702,6 @@ EC12E series with push-on switch</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-lemo" urn="urn:adsk.eagle:library:159">
-<description>&lt;b&gt;Connectors from LEMO&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="EZG-0B-0K-302" urn="urn:adsk.eagle:footprint:7704/1" library_version="1">
-<description>&lt;b&gt;LEMO Connector&lt;/b&gt;&lt;p&gt;
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<wire x1="-4.9" y1="4.9" x2="4.9" y2="4.9" width="0.2032" layer="21"/>
-<wire x1="4.9" y1="4.9" x2="4.9" y2="-4.9" width="0.2032" layer="21"/>
-<wire x1="4.9" y1="-4.9" x2="-4.9" y2="-4.9" width="0.2032" layer="21"/>
-<wire x1="-4.9" y1="-4.9" x2="-4.9" y2="4.9" width="0.2032" layer="21"/>
-<wire x1="-1.7" y1="3.75" x2="1.7" y2="3.75" width="0.4" layer="21" curve="-49.758646"/>
-<circle x="0" y="0" radius="4.4" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.8253" width="0.2032" layer="21"/>
-<circle x="0" y="1.1" radius="0.1984" width="0.2032" layer="51"/>
-<circle x="0" y="-1.1" radius="0.1984" width="0.2032" layer="51"/>
-<pad name="1" x="0" y="1.1" drill="0.6" diameter="1"/>
-<pad name="2" x="0" y="-1.1" drill="0.6" diameter="1"/>
-<text x="-5.08" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="-3.81" y="3.81" drill="1.7"/>
-<hole x="3.81" y="3.81" drill="1.7"/>
-<hole x="3.81" y="-3.81" drill="1.7"/>
-<hole x="-3.81" y="-3.81" drill="1.7"/>
-</package>
-<package name="EZG-1B-1K-302" urn="urn:adsk.eagle:footprint:7705/1" library_version="1">
-<description>&lt;b&gt;LEMO Connector&lt;/b&gt;&lt;p&gt;
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<wire x1="-5.9" y1="5.9" x2="5.9" y2="5.9" width="0.2032" layer="21"/>
-<wire x1="5.9" y1="5.9" x2="5.9" y2="-5.9" width="0.2032" layer="21"/>
-<wire x1="5.9" y1="-5.9" x2="-5.9" y2="-5.9" width="0.2032" layer="21"/>
-<wire x1="-5.9" y1="-5.9" x2="-5.9" y2="5.9" width="0.2032" layer="21"/>
-<wire x1="-1.7" y1="4.8" x2="1.7" y2="4.8" width="0.4" layer="21" curve="-39.004897"/>
-<circle x="0" y="0" radius="5.4" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="4.8041" width="0.2032" layer="21"/>
-<circle x="0" y="1.4" radius="0.1984" width="0.2032" layer="51"/>
-<circle x="0" y="-1.4" radius="0.1984" width="0.2032" layer="51"/>
-<pad name="1" x="0" y="1.4" drill="0.6" diameter="1"/>
-<pad name="2" x="0" y="-1.4" drill="0.6" diameter="1"/>
-<text x="-5.715" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.715" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="-3.81" y="3.81" drill="1.7"/>
-<hole x="3.81" y="3.81" drill="1.7"/>
-<hole x="3.81" y="-3.81" drill="1.7"/>
-<hole x="-3.81" y="-3.81" drill="1.7"/>
-</package>
-<package name="EZG-2B-2K-302" urn="urn:adsk.eagle:footprint:7706/1" library_version="1">
-<description>&lt;b&gt;LEMO Connector&lt;/b&gt;&lt;p&gt;
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<wire x1="-7.4" y1="7.4" x2="7.4" y2="7.4" width="0.2032" layer="21"/>
-<wire x1="7.4" y1="7.4" x2="7.4" y2="-7.4" width="0.2032" layer="21"/>
-<wire x1="7.4" y1="-7.4" x2="-7.4" y2="-7.4" width="0.2032" layer="21"/>
-<wire x1="-7.4" y1="-7.4" x2="-7.4" y2="7.4" width="0.2032" layer="21"/>
-<wire x1="-1.7" y1="6.4" x2="1.7" y2="6.4" width="0.4" layer="21" curve="-33.52623"/>
-<circle x="0" y="0" radius="6.9" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="6.3757" width="0.2032" layer="21"/>
-<circle x="0" y="2.2" radius="0.1984" width="0.2032" layer="51"/>
-<circle x="0" y="-2.2" radius="0.1984" width="0.2032" layer="51"/>
-<pad name="1" x="0" y="2.2" drill="0.6" diameter="1"/>
-<pad name="2" x="0" y="-2.2" drill="0.6" diameter="1"/>
-<text x="-6.985" y="7.62" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.985" y="-8.89" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="-5.08" y="5.08" drill="1.7"/>
-<hole x="5.08" y="5.08" drill="1.7"/>
-<hole x="5.08" y="-5.08" drill="1.7"/>
-<hole x="-5.08" y="-5.08" drill="1.7"/>
-</package>
-<package name="EZG-00-302" urn="urn:adsk.eagle:footprint:7707/1" library_version="1">
-<description>&lt;b&gt;LEMO Connector&lt;/b&gt;&lt;p&gt;
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<wire x1="-3.4" y1="3.4" x2="3.4" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="3.4" x2="3.4" y2="-3.4" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="-3.4" x2="-3.4" y2="-3.4" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-3.4" x2="-3.4" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="-1.1" y1="2.8" x2="1.1" y2="2.8" width="0.4" layer="21" curve="-42.895473"/>
-<circle x="0" y="0" radius="3.3" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="2.7518" width="0.2032" layer="21"/>
-<circle x="0" y="0.6" radius="0.1984" width="0.2032" layer="51"/>
-<circle x="0" y="-0.6" radius="0.1984" width="0.2032" layer="51"/>
-<pad name="1" x="0" y="0.6" drill="0.6" diameter="1"/>
-<pad name="2" x="0" y="-0.6" drill="0.6" diameter="1"/>
-<pad name="M1" x="-2.54" y="2.54" drill="0.9" diameter="1.2"/>
-<pad name="M2" x="2.54" y="2.54" drill="0.9" diameter="1.2"/>
-<pad name="M3" x="2.54" y="-2.54" drill="0.9" diameter="1.2"/>
-<pad name="M4" x="-2.54" y="-2.54" drill="0.9" diameter="1.2"/>
-<text x="-3.175" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.175" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="EZG-0B-0K-302" urn="urn:adsk.eagle:package:7769/1" type="box" library_version="1">
-<description>LEMO Connector
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<packageinstances>
-<packageinstance name="EZG-0B-0K-302"/>
-</packageinstances>
-</package3d>
-<package3d name="EZG-1B-1K-302" urn="urn:adsk.eagle:package:7770/1" type="box" library_version="1">
-<description>LEMO Connector
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<packageinstances>
-<packageinstance name="EZG-1B-1K-302"/>
-</packageinstances>
-</package3d>
-<package3d name="EZG-2B-2K-302" urn="urn:adsk.eagle:package:7768/1" type="box" library_version="1">
-<description>LEMO Connector
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<packageinstances>
-<packageinstance name="EZG-2B-2K-302"/>
-</packageinstances>
-</package3d>
-<package3d name="EZG-00-302" urn="urn:adsk.eagle:package:7781/1" type="box" library_version="1">
-<description>LEMO Connector
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<packageinstances>
-<packageinstance name="EZG-00-302"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="P02" urn="urn:adsk.eagle:symbol:7703/1" library_version="1">
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-3.81" x2="5.08" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-3.81" x2="5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="pin" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="-5.08" y="-2.54" visible="pin" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="EZG-?-302" urn="urn:adsk.eagle:component:7802/1" prefix="X" library_version="1">
-<description>&lt;b&gt;LEMO Connector&lt;/b&gt;&lt;p&gt;
-Source: http://www.lemo.com/pdfs/catalog/ROW/German/unipole_multipole.pdf</description>
-<gates>
-<gate name="G$1" symbol="P02" x="0" y="0" swaplevel="1"/>
-</gates>
-<devices>
-<device name="0B" package="EZG-0B-0K-302">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7769/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0K" package="EZG-0B-0K-302">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7769/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="1B" package="EZG-1B-1K-302">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7770/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="1K" package="EZG-1B-1K-302">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7770/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="2B" package="EZG-2B-2K-302">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7768/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="2K" package="EZG-2B-2K-302">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7768/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="00" package="EZG-00-302">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7781/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="linear-technology" urn="urn:adsk.eagle:library:261">
-<description>&lt;b&gt;Linear Technology Devices&lt;/b&gt;&lt;p&gt;
-http://www.linear-tech.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT223" urn="urn:adsk.eagle:footprint:15993/1" library_version="4">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-3.6068" y="-3.302" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.8768" y="-3.302" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SOT223" urn="urn:adsk.eagle:package:16063/1" type="box" library_version="4">
-<description>Small Outline Transistor</description>
-<packageinstances>
-<packageinstance name="SOT223"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="LT1129-3" urn="urn:adsk.eagle:symbol:15992/1" library_version="4">
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-2.032" y="-1.524" size="1.524" layer="95">GND</text>
-<text x="-7.62" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="IN" x="-10.16" y="2.54" length="short" direction="in"/>
-<pin name="OUT" x="10.16" y="2.54" length="short" direction="out" rot="R180"/>
-<pin name="GND" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
-</symbol>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:15988/1" library_version="4">
-<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<pin name="GND" x="0" y="-2.54" length="short" direction="pwr" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LT1963EST" urn="urn:adsk.eagle:component:16105/2" prefix="IC" library_version="4">
-<description>&lt;b&gt;1.5A, Low Noise, Fast Transient Response LDO Regulator&lt;/b&gt;&lt;p&gt;
-Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C3,P2222,D3148</description>
-<gates>
-<gate name="G$1" symbol="LT1129-3" x="0" y="0"/>
-<gate name="G$2" symbol="GND" x="20.32" y="-2.54" addlevel="request"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-<connect gate="G$2" pin="GND" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16063/1"/>
-</package3dinstances>
-<technologies>
-<technology name="-1.5">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="LT1963EST-1.5" constant="no"/>
-<attribute name="OC_FARNELL" value="1663528" constant="no"/>
-<attribute name="OC_NEWARK" value="57M7534" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="-1.8">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="LT1963EST-1.8" constant="no"/>
-<attribute name="OC_FARNELL" value="1503436" constant="no"/>
-<attribute name="OC_NEWARK" value="57M7538" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="-2.5">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="LT1963EST-2.5" constant="no"/>
-<attribute name="OC_FARNELL" value="1501031" constant="no"/>
-<attribute name="OC_NEWARK" value="57M7542" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="-3.3">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="LT1963EST-3.3" constant="no"/>
-<attribute name="OC_FARNELL" value="1501032" constant="no"/>
-<attribute name="OC_NEWARK" value="57M7546" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6162,7 +5720,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C3,P2222,D3148</de
 <part name="TB1" library="ARDUINO_NANO" deviceset="ARDUINO_NANO" device=""/>
 <part name="GPS" library="SparkFun-GPS" library_urn="urn:adsk.eagle:library:518" deviceset="ANTENNA" device="GPS-2X7MM" package3d_urn="urn:adsk.eagle:package:38594/1" value="1.575GHz"/>
 <part name="GSM" library="SparkFun-GPS" library_urn="urn:adsk.eagle:library:518" deviceset="ANTENNA" device="GPS-2X7MM" package3d_urn="urn:adsk.eagle:package:38594/1" value="1.575GHz"/>
-<part name="12V_BATTERY" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="BATTERY" device="" package3d_urn="urn:adsk.eagle:package:26670/1"/>
 <part name="U$1" library="JW_SIM800LMODULE" deviceset="SIM800LMODULE" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5400" device="" package3d_urn="urn:adsk.eagle:package:43365/2"/>
 <part name="FENCE_LED" library="display-hp" library_urn="urn:adsk.eagle:library:212" deviceset="HLMP6" device="" package3d_urn="urn:adsk.eagle:package:12992/1"/>
@@ -6170,29 +5727,27 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C3,P2222,D3148</de
 <part name="1K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 <part name="SWITCH" library="switch-alps" library_urn="urn:adsk.eagle:library:373" deviceset="EC12E_SW" device="" package3d_urn="urn:adsk.eagle:package:27083/1"/>
 <part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
-<part name="X1" library="con-lemo" library_urn="urn:adsk.eagle:library:159" deviceset="EZG-?-302" device="2K" package3d_urn="urn:adsk.eagle:package:7768/1"/>
-<part name="X2" library="con-lemo" library_urn="urn:adsk.eagle:library:159" deviceset="EZG-?-302" device="2K" package3d_urn="urn:adsk.eagle:package:7768/1"/>
-<part name="LM1085" library="linear-technology" library_urn="urn:adsk.eagle:library:261" deviceset="LT1963EST" device="" package3d_urn="urn:adsk.eagle:package:16063/1" technology="-2.5"/>
-<part name="10K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
-<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5400" device="" package3d_urn="urn:adsk.eagle:package:43365/2"/>
+<part name="1K_OHMS1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
+<part name="Q2" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-49.022" y="44.704" size="1.778" layer="91">Starting line POSITIVE + (20A max)</text>
-<text x="-49.022" y="34.798" size="1.778" layer="91">Starting line NEGATIVE - (20A max)</text>
-<text x="-71.12" y="86.36" size="1.778" layer="91">See "use_interrupt" branch
-Use voltage from from starter switch to
-trigger interrupt on arduino</text>
+<text x="-41.402" y="42.164" size="1.778" layer="91">Kill line in (20A max)</text>
+<text x="-41.402" y="32.258" size="1.778" layer="91">Kill line out (20A max)</text>
+<text x="-41.402" y="11.938" size="1.778" layer="91">Starter switch line in</text>
+<text x="-41.402" y="67.564" size="1.778" layer="91">Battery +</text>
+<text x="-41.402" y="62.484" size="1.778" layer="91">Battery -</text>
 </plain>
 <instances>
-<instance part="K1" gate="1" x="12.7" y="35.56" smashed="yes" rot="R180" grouprefs="RELAY"/>
-<instance part="K1" gate="2" x="0" y="38.1" smashed="yes" rot="R180" grouprefs="RELAY"/>
+<instance part="K1" gate="1" x="20.32" y="33.02" smashed="yes" rot="R180" grouprefs="RELAY"/>
+<instance part="K1" gate="2" x="7.62" y="35.56" smashed="yes" rot="R180" grouprefs="RELAY"/>
 <instance part="12V-5V_CONVERTER" gate="G$1" x="7.62" y="63.5" smashed="yes">
 <attribute name="NAME" x="-2.54" y="69.215" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-2.54" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="TB1" gate="G$1" x="73.66" y="20.32" smashed="yes">
+<attribute name="NAME" x="60.96" y="55.88" size="1.778" layer="95"/>
 <attribute name="VALUE" x="60.96" y="-17.78" size="1.778" layer="96"/>
 </instance>
 <instance part="GPS" gate="G$1" x="99.06" y="96.52" smashed="yes">
@@ -6201,51 +5756,35 @@ trigger interrupt on arduino</text>
 <instance part="GSM" gate="G$1" x="106.68" y="96.52" smashed="yes">
 <attribute name="NAME" x="107.188" y="96.52" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="12V_BATTERY" gate="G$1" x="20.32" y="81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.7" y="87.63" size="1.778" layer="95"/>
-<attribute name="VALUE" x="13.97" y="85.09" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="U$1" gate="G$1" x="73.66" y="81.28" smashed="yes"/>
-<instance part="D1" gate="1" x="25.4" y="35.56" smashed="yes" rot="R90"/>
+<instance part="D1" gate="1" x="33.02" y="33.02" smashed="yes" rot="R90"/>
 <instance part="FENCE_LED" gate="A" x="53.34" y="-17.78" smashed="yes">
-<attribute name="NAME" x="51.562" y="-11.684" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="56.642" y="-11.684" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="KILL_LED" gate="A" x="93.98" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="95.758" y="21.844" size="1.778" layer="95"/>
+<attribute name="NAME" x="90.678" y="29.464" size="1.778" layer="95"/>
 </instance>
-<instance part="1K_OHMS" gate="G$1" x="-2.54" y="-7.62" smashed="yes">
-<attribute name="NAME" x="-8.89" y="-11.2014" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="-10.922" size="1.778" layer="96"/>
+<instance part="1K_OHMS" gate="G$1" x="2.54" y="-10.16" smashed="yes">
+<attribute name="NAME" x="-3.81" y="-13.7414" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-1.27" y="-13.462" size="1.778" layer="96"/>
 </instance>
 <instance part="SWITCH" gate="G$2" x="-20.32" y="66.04" smashed="yes">
 <attribute name="PART" x="-25.4" y="71.12" size="1.27" layer="95"/>
 </instance>
-<instance part="Q1" gate="G$1" x="7.62" y="-7.62" smashed="yes">
-<attribute name="VALUE" x="4.318" y="-4.318" size="1.778" layer="96"/>
+<instance part="Q1" gate="G$1" x="15.24" y="-10.16" smashed="yes">
+<attribute name="VALUE" x="11.938" y="-6.858" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="G$1" x="-12.7" y="82.804" smashed="yes"/>
-<instance part="X2" gate="G$1" x="-1.016" y="80.264" smashed="yes" rot="R180"/>
-<instance part="LM1085" gate="G$1" x="30.48" y="10.16" smashed="yes">
-<attribute name="NAME" x="22.86" y="16.51" size="1.778" layer="95"/>
+<instance part="1K_OHMS1" gate="G$1" x="2.54" y="10.16" smashed="yes">
+<attribute name="NAME" x="-3.81" y="6.5786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-1.27" y="6.858" size="1.778" layer="96"/>
 </instance>
-<instance part="10K_OHMS" gate="G$1" x="38.1" y="2.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="34.544" y="4.5974" size="1.778" layer="95"/>
-<attribute name="VALUE" x="41.91" y="5.842" size="1.778" layer="96" rot="R180"/>
+<instance part="Q2" gate="G$1" x="15.24" y="10.16" smashed="yes">
+<attribute name="VALUE" x="11.938" y="13.462" size="1.778" layer="96"/>
 </instance>
-<instance part="D2" gate="1" x="0" y="12.7" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$2" class="0">
-<segment>
-<pinref part="12V-5V_CONVERTER" gate="G$1" pin="-VIN1"/>
-<pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="80.264" x2="-30.48" y2="80.264" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="80.264" x2="-30.48" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="60.96" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="GSM" gate="G$1" pin="SIGNAL"/>
@@ -6265,84 +5804,49 @@ trigger interrupt on arduino</text>
 <net name="N$7" class="0">
 <segment>
 <pinref part="K1" gate="2" pin="P"/>
-<wire x1="0" y1="40.64" x2="0" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="0" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-38.1" y="43.18"/>
-<wire x1="-12.7" y1="43.18" x2="-38.1" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="43.18" x2="-12.7" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-12.7" y="43.18"/>
-<pinref part="D2" gate="1" pin="A"/>
-<wire x1="-12.7" y1="12.7" x2="-2.54" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="38.1" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-33.02" y="40.64"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<junction x="-38.1" y="33.02"/>
+<junction x="-33.02" y="30.48"/>
 <pinref part="K1" gate="2" pin="O"/>
-<wire x1="-5.08" y1="33.02" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="+VOUT1"/>
-<wire x1="25.4" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="66.04" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="66.04" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="33.02" y1="86.36" x2="55.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="86.36" x2="55.66" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="55.66" y1="86.36" x2="55.66" y2="86.28" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<junction x="33.02" y="66.04"/>
+<wire x1="30.48" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
+<junction x="30.48" y="66.04"/>
 <wire x1="101.6" y1="66.04" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="TB1" gate="G$1" pin="+5V"/>
 <wire x1="101.6" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<wire x1="99.06" y1="60.96" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="TB1" gate="G$1" pin="COM/GND"/>
-<wire x1="99.06" y1="35.56" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-12.7" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="KILL_LED" gate="A" pin="K"/>
-<wire x1="93.98" y1="30.48" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
-<junction x="99.06" y="35.56"/>
-<pinref part="FENCE_LED" gate="A" pin="K"/>
-<wire x1="53.34" y1="-20.32" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-22.86" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="99.06" y="-12.7"/>
-<pinref part="LM1085" gate="G$1" pin="GND"/>
-<wire x1="30.48" y1="5.08" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="2.54" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-22.86" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="53.34" y="-22.86"/>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
-<wire x1="55.626" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="71.12" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="10K_OHMS" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="2.54" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
-<junction x="30.48" y="2.54"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
-<wire x1="50.8" y1="5.08" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="D2"/>
+<wire x1="55.88" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="RX"/>
-<wire x1="50.8" y1="81.28" x2="55.66" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="55.66" y1="81.28" x2="55.66" y2="80.28" width="0.1524" layer="91"/>
-<pinref part="TB1" gate="G$1" pin="D3"/>
-<wire x1="50.8" y1="5.08" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="55.66" y1="80.28" x2="48.26" y2="80.28" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="80.28" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="TB1" gate="G$1" pin="D4"/>
-<wire x1="55.88" y1="2.54" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="D3"/>
+<wire x1="55.88" y1="5.08" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="TX"/>
-<wire x1="55.66" y1="77.28" x2="53.34" y2="77.28" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="77.28" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="55.66" y1="77.28" x2="50.8" y2="77.28" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="77.28" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -6363,108 +5867,118 @@ trigger interrupt on arduino</text>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="SWITCH" gate="G$2" pin="1"/>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="+VIN1"/>
+<pinref part="SWITCH" gate="G$2" pin="1"/>
 <wire x1="-10.16" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="66.04" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-12.7" y="66.04"/>
-<wire x1="-12.7" y1="53.34" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="2"/>
+<wire x1="20.32" y1="48.26" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="25.4" y1="38.1" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="50.8" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="53.34" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
-<junction x="12.7" y="50.8"/>
+<wire x1="33.02" y1="35.56" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="53.34" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="20.32" y="48.26"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="K1" gate="1" pin="1"/>
-<wire x1="12.7" y1="30.48" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="27.94" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="25.4" y1="33.02" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="12.7" y="22.86"/>
+<wire x1="33.02" y1="30.48" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<junction x="20.32" y="20.32"/>
+<wire x1="20.32" y1="20.32" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="TB1" gate="G$1" pin="D5"/>
-<wire x1="55.88" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="0" x2="-12.7" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="1K_OHMS" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="1K_OHMS" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
-<wire x1="2.54" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="12V_BATTERY" gate="G$1" pin="+"/>
-<pinref part="X2" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="86.36" x2="4.064" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="4.064" y1="86.36" x2="4.064" y2="82.804" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="12V_BATTERY" gate="G$1" pin="-"/>
-<pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="76.2" x2="4.064" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="4.064" y1="76.2" x2="4.064" y2="80.264" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="82.804" x2="-27.94" y2="82.804" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="82.804" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="SWITCH" gate="G$2" pin="2"/>
-<wire x1="-27.94" y1="66.04" x2="-25.4" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="LM1085" gate="G$1" pin="OUT"/>
-<wire x1="40.64" y1="12.7" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="12.7" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="TB1" gate="G$1" pin="D2"/>
-<wire x1="43.18" y1="7.62" x2="55.88" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="10K_OHMS" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="7.62" x2="43.18" y2="2.54" width="0.1524" layer="91"/>
-<junction x="43.18" y="7.62"/>
+<wire x1="7.62" y1="-10.16" x2="12.7" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND0"/>
-<wire x1="55.66" y1="74.28" x2="35.56" y2="74.28" width="0.1524" layer="91"/>
-<pinref part="12V-5V_CONVERTER" gate="G$1" pin="-VOUT1"/>
-<wire x1="25.4" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="60.96" x2="35.56" y2="74.28" width="0.1524" layer="91"/>
-<junction x="35.56" y="60.96"/>
-<junction x="35.56" y="60.96"/>
-<wire x1="35.56" y1="20.32" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="12.7" y1="-15.24" x2="17.78" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-15.24" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="1K_OHMS1" gate="G$1" pin="2"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
+<wire x1="7.62" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="2.54" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="D2" gate="1" pin="C"/>
-<pinref part="LM1085" gate="G$1" pin="IN"/>
-<wire x1="2.54" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="1K_OHMS1" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="10.16" x2="-33.02" y2="10.16" width="0.1524" layer="91"/>
+<junction x="-33.02" y="10.16"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<wire x1="53.34" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="60.96" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="COM/GND"/>
+<wire x1="99.06" y1="35.56" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-12.7" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="KILL_LED" gate="A" pin="K"/>
+<wire x1="93.98" y1="30.48" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+<junction x="99.06" y="35.56"/>
+<pinref part="FENCE_LED" gate="A" pin="K"/>
+<wire x1="53.34" y1="-20.32" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-22.86" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="99.06" y="-12.7"/>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
+<wire x1="55.626" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="71.12" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="12V-5V_CONVERTER" gate="G$1" pin="-VOUT1"/>
+<wire x1="25.4" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-20.32" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="20.32" y1="-20.32" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-20.32" x2="38.1" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND0"/>
+<wire x1="55.66" y1="74.28" x2="38.1" y2="74.28" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="74.28" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<junction x="38.1" y="60.96"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="SWITCH" gate="G$2" pin="2"/>
+<wire x1="-25.4" y1="66.04" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-33.02" y="66.04"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="12V-5V_CONVERTER" gate="G$1" pin="-VIN1"/>
+<wire x1="-10.16" y1="60.96" x2="-33.02" y2="60.96" width="0.1524" layer="91"/>
+<junction x="-33.02" y="60.96"/>
 </segment>
 </net>
 </nets>
@@ -6473,10 +5987,6 @@ trigger interrupt on arduino</text>
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
