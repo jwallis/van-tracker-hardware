@@ -5641,19 +5641,24 @@ EC12E series with push-on switch</description>
 <part name="1K_OHMS1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 <part name="Q2" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5400" device="" package3d_urn="urn:adsk.eagle:package:43365/2"/>
+<part name="10K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
+<part name="5.1K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-41.402" y="42.164" size="1.778" layer="91">Kill line in (20A max)</text>
-<text x="-41.402" y="32.258" size="1.778" layer="91">Kill line out (20A max)</text>
-<text x="-41.402" y="11.938" size="1.778" layer="91">Starter switch line in</text>
+<text x="-41.402" y="44.704" size="1.778" layer="91">Kill line in (20A max)</text>
+<text x="-41.402" y="34.798" size="1.778" layer="91">Kill line out (20A max)</text>
+<text x="-41.402" y="17.018" size="1.778" layer="91">Starter switch line in</text>
 <text x="-41.402" y="67.564" size="1.778" layer="91">Battery +</text>
 <text x="-41.402" y="62.484" size="1.778" layer="91">Battery -</text>
+<text x="-41.402" y="85.344" size="1.778" layer="91">Not good because there needs to be more protection between
+the starter and pin D2.  Also, if the Arduino is off,
+power from the starter could backpower the Arduino, frying it</text>
 </plain>
 <instances>
-<instance part="K1" gate="1" x="20.32" y="33.02" smashed="yes" rot="R180" grouprefs="RELAY"/>
-<instance part="K1" gate="2" x="7.62" y="35.56" smashed="yes" rot="R180" grouprefs="RELAY"/>
+<instance part="K1" gate="1" x="20.32" y="35.56" smashed="yes" rot="R180" grouprefs="RELAY"/>
+<instance part="K1" gate="2" x="7.62" y="38.1" smashed="yes" rot="R180" grouprefs="RELAY"/>
 <instance part="12V-5V_CONVERTER" gate="G$1" x="7.62" y="63.5" smashed="yes">
 <attribute name="NAME" x="-2.54" y="69.215" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-2.54" y="53.34" size="1.778" layer="96"/>
@@ -5669,25 +5674,33 @@ EC12E series with push-on switch</description>
 <attribute name="NAME" x="107.188" y="96.52" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="U$1" gate="G$1" x="73.66" y="81.28" smashed="yes"/>
-<instance part="D1" gate="1" x="33.02" y="33.02" smashed="yes" rot="R90"/>
-<instance part="1K_OHMS" gate="G$1" x="2.54" y="-10.16" smashed="yes">
-<attribute name="NAME" x="-3.81" y="-13.7414" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-1.27" y="-13.462" size="1.778" layer="96"/>
+<instance part="D1" gate="1" x="33.02" y="35.56" smashed="yes" rot="R90"/>
+<instance part="1K_OHMS" gate="G$1" x="2.54" y="-2.54" smashed="yes">
+<attribute name="NAME" x="-3.81" y="-6.1214" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-1.27" y="-5.842" size="1.778" layer="96"/>
 </instance>
 <instance part="SWITCH" gate="G$2" x="-20.32" y="66.04" smashed="yes">
 <attribute name="PART" x="-25.4" y="71.12" size="1.27" layer="95"/>
 </instance>
-<instance part="Q1" gate="G$1" x="15.24" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="11.938" y="-6.858" size="1.778" layer="96"/>
+<instance part="Q1" gate="G$1" x="15.24" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="11.938" y="0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="1K_OHMS1" gate="G$1" x="2.54" y="10.16" smashed="yes">
-<attribute name="NAME" x="-3.81" y="6.5786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-1.27" y="6.858" size="1.778" layer="96"/>
+<instance part="1K_OHMS1" gate="G$1" x="2.54" y="15.24" smashed="yes">
+<attribute name="NAME" x="-3.81" y="11.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-1.27" y="11.938" size="1.778" layer="96"/>
 </instance>
-<instance part="Q2" gate="G$1" x="15.24" y="10.16" smashed="yes">
-<attribute name="VALUE" x="11.938" y="13.462" size="1.778" layer="96"/>
+<instance part="Q2" gate="G$1" x="15.24" y="15.24" smashed="yes">
+<attribute name="VALUE" x="11.938" y="18.542" size="1.778" layer="96"/>
 </instance>
 <instance part="D2" gate="1" x="101.6" y="60.96" smashed="yes" rot="R270"/>
+<instance part="10K_OHMS" gate="G$1" x="2.54" y="-17.78" smashed="yes">
+<attribute name="NAME" x="-3.81" y="-21.3614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-1.27" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="5.1K_OHMS" gate="G$1" x="22.86" y="-17.78" smashed="yes">
+<attribute name="NAME" x="16.51" y="-21.3614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="19.05" y="-21.082" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5711,16 +5724,16 @@ EC12E series with push-on switch</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="K1" gate="2" pin="P"/>
-<wire x1="7.62" y1="38.1" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-33.02" y="40.64"/>
+<wire x1="7.62" y1="40.64" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="43.18" x2="-33.02" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-33.02" y="43.18"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<junction x="-33.02" y="30.48"/>
+<junction x="-33.02" y="33.02"/>
 <pinref part="K1" gate="2" pin="O"/>
-<wire x1="2.54" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="33.02" x2="-33.02" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5739,20 +5752,20 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="TB1" gate="G$1" pin="D2"/>
-<wire x1="55.88" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="RX"/>
 <wire x1="55.66" y1="80.28" x2="48.26" y2="80.28" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="80.28" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="80.28" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="D3"/>
+<wire x1="55.88" y1="5.08" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="TB1" gate="G$1" pin="D3"/>
-<wire x1="55.88" y1="5.08" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="TX"/>
 <wire x1="55.66" y1="77.28" x2="50.8" y2="77.28" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="77.28" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="77.28" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="D4"/>
+<wire x1="55.88" y1="2.54" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -5761,65 +5774,72 @@ EC12E series with push-on switch</description>
 <pinref part="SWITCH" gate="G$2" pin="1"/>
 <wire x1="-10.16" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="66.04" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="66.04" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-12.7" y="66.04"/>
-<wire x1="-12.7" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="2"/>
-<wire x1="20.32" y1="48.26" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="50.8" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="33.02" y1="35.56" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="50.8" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="20.32" y="48.26"/>
+<wire x1="33.02" y1="38.1" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="53.34" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
+<junction x="20.32" y="50.8"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="K1" gate="1" pin="1"/>
-<wire x1="20.32" y1="27.94" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="30.48" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="33.02" y1="30.48" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
-<junction x="20.32" y="20.32"/>
-<wire x1="20.32" y1="20.32" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="33.02" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
+<junction x="20.32" y="22.86"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="TB1" gate="G$1" pin="D5"/>
-<wire x1="55.88" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="1K_OHMS" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="D5"/>
+<wire x1="55.88" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="1K_OHMS" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
-<wire x1="7.62" y1="-10.16" x2="12.7" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="1K_OHMS1" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
-<wire x1="7.62" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="2.54" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="7.62" x2="20.32" y2="0" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="1K_OHMS1" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="10.16" x2="-33.02" y2="10.16" width="0.1524" layer="91"/>
-<junction x="-33.02" y="10.16"/>
+<wire x1="-2.54" y1="15.24" x2="-12.7" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-33.02" y="15.24"/>
+<pinref part="10K_OHMS" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="15.24" x2="-33.02" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-17.78" x2="-12.7" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-12.7" y="15.24"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -5837,14 +5857,18 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="-VOUT1"/>
 <wire x1="25.4" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-20.32" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-12.7" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="20.32" y1="-20.32" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="-20.32" x2="38.1" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-12.7" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-12.7" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND0"/>
 <wire x1="55.66" y1="74.28" x2="38.1" y2="74.28" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="74.28" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 <junction x="38.1" y="60.96"/>
+<pinref part="5.1K_OHMS" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-17.78" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="38.1" y="-12.7"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5869,12 +5893,30 @@ EC12E series with push-on switch</description>
 <wire x1="101.6" y1="58.42" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="5.1K_OHMS" gate="G$1" pin="1"/>
+<pinref part="10K_OHMS" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="-17.78" x2="12.7" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-17.78" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-17.78" x2="12.7" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="12.7" y="-17.78"/>
+<wire x1="12.7" y1="-22.86" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-22.86" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="D2"/>
+<wire x1="45.72" y1="7.62" x2="55.88" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
