@@ -144,166 +144,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="relay" urn="urn:adsk.eagle:library:339">
-<description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Eichhoff
-&lt;li&gt;Finder
-&lt;li&gt;Fujitsu
-&lt;li&gt;HAMLIN
-&lt;li&gt;OMRON
-&lt;li&gt;Matsushita
-&lt;li&gt;NAiS
-&lt;li&gt;Siemens
-&lt;li&gt;Schrack
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="CP1" urn="urn:adsk.eagle:footprint:24137/1" library_version="5">
-<description>&lt;b&gt;ULTRA-MINIATURE LOW PROFILE AUTOMOTIVE RELAY&lt;/b&gt; NAiS&lt;p&gt;
-Source: http://www.mew-europe.com/.. en_ds_61207_0000.pdf</description>
-<wire x1="6.15" y1="6.9" x2="-6.15" y2="6.9" width="0.2032" layer="21"/>
-<wire x1="-6.9" y1="6.15" x2="-6.9" y2="-5.15" width="0.2032" layer="21"/>
-<wire x1="-6.15" y1="-5.9" x2="6.15" y2="-5.9" width="0.2032" layer="21"/>
-<wire x1="6.9" y1="-5.15" x2="6.9" y2="6.15" width="0.2032" layer="21"/>
-<wire x1="6.9" y1="6.15" x2="6.15" y2="6.9" width="0.2032" layer="21" curve="90"/>
-<wire x1="-6.15" y1="6.9" x2="-6.9" y2="6.15" width="0.2032" layer="21" curve="90"/>
-<wire x1="-6.9" y1="-5.15" x2="-6.15" y2="-5.9" width="0.2032" layer="21" curve="90"/>
-<wire x1="6.15" y1="-5.9" x2="6.9" y2="-5.15" width="0.2032" layer="21" curve="90"/>
-<pad name="NO" x="-5.35" y="0" drill="1.4" rot="R180"/>
-<pad name="C" x="5.35" y="0" drill="1.4" rot="R180"/>
-<pad name="2" x="-3.35" y="-4.5" drill="1.3" rot="R180"/>
-<pad name="1" x="2.65" y="-4.5" drill="1.3" rot="R180"/>
-<pad name="NC" x="-0.35" y="5.4" drill="1.4" rot="R180"/>
-<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.35" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="CP1SA" urn="urn:adsk.eagle:footprint:24138/1" library_version="5">
-<description>&lt;b&gt;ULTRA-MINIATURE LOW PROFILE AUTOMOTIVE RELAY&lt;/b&gt; NAiS&lt;p&gt;
-Source: http://www.mew-europe.com/.. en_ds_61207_0000.pdf</description>
-<wire x1="6.45" y1="6.9" x2="-5.85" y2="6.9" width="0.2032" layer="21"/>
-<wire x1="-6.6" y1="6.15" x2="-6.6" y2="-5.15" width="0.2032" layer="21"/>
-<wire x1="-5.85" y1="-5.9" x2="6.45" y2="-5.9" width="0.2032" layer="21"/>
-<wire x1="7.2" y1="-5.15" x2="7.2" y2="6.15" width="0.2032" layer="21"/>
-<wire x1="6.45" y1="6.9" x2="7.2" y2="6.15" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-6.6" y1="6.15" x2="-5.85" y2="6.9" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-5.85" y1="-5.9" x2="-6.6" y2="-5.15" width="0.2032" layer="21" curve="-90"/>
-<wire x1="7.2" y1="-5.15" x2="6.45" y2="-5.9" width="0.2032" layer="21" curve="-90"/>
-<smd name="NC" x="0" y="6.8" dx="4.8" dy="2.5" layer="1" rot="R270"/>
-<smd name="C" x="7.1" y="0" dx="4.8" dy="2.5" layer="1"/>
-<smd name="NO" x="-6.4" y="0" dx="4.8" dy="2.5" layer="1"/>
-<smd name="1" x="3" y="-5.9" dx="2" dy="4.2" layer="1" rot="R180"/>
-<smd name="2" x="-3" y="-5.9" dx="2" dy="4.2" layer="1" rot="R180"/>
-<text x="-6.35" y="-10.16" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="2.5" y1="-7.4" x2="3.5" y2="-6" layer="51" rot="R180"/>
-<rectangle x1="-3.5" y1="-7.4" x2="-2.5" y2="-6" layer="51" rot="R180"/>
-<rectangle x1="-8.2" y1="-0.75" x2="-6.7" y2="0.75" layer="51" rot="R180"/>
-<rectangle x1="7.3" y1="-0.75" x2="8.8" y2="0.75" layer="51" rot="R180"/>
-<rectangle x1="-0.75" y1="7" x2="0.75" y2="8.5" layer="51" rot="R270"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="CP1" urn="urn:adsk.eagle:package:24447/1" type="box" library_version="5">
-<description>ULTRA-MINIATURE LOW PROFILE AUTOMOTIVE RELAY NAiS
-Source: http://www.mew-europe.com/.. en_ds_61207_0000.pdf</description>
-<packageinstances>
-<packageinstance name="CP1"/>
-</packageinstances>
-</package3d>
-<package3d name="CP1SA" urn="urn:adsk.eagle:package:24446/1" type="box" library_version="5">
-<description>ULTRA-MINIATURE LOW PROFILE AUTOMOTIVE RELAY NAiS
-Source: http://www.mew-europe.com/.. en_ds_61207_0000.pdf</description>
-<packageinstances>
-<packageinstance name="CP1SA"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="K" urn="urn:adsk.eagle:symbol:23941/1" library_version="5">
-<wire x1="-3.81" y1="-1.905" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-1.905" x2="3.81" y2="1.905" width="0.254" layer="94"/>
-<wire x1="3.81" y1="1.905" x2="1.905" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.905" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.905" x2="3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="1.905" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
-<text x="1.27" y="2.921" size="1.778" layer="96">&gt;VALUE</text>
-<text x="1.27" y="5.08" size="1.778" layer="95">&gt;PART</text>
-<pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-</symbol>
-<symbol name="U" urn="urn:adsk.eagle:symbol:23944/1" library_version="5">
-<wire x1="3.175" y1="5.08" x2="1.905" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="5.08" x2="-1.905" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="2.54" y2="5.715" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<circle x="0" y="1.27" radius="0.127" width="0.4064" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="95">&gt;PART</text>
-<pin name="O" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="S" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
-<pin name="P" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CP1?-*" urn="urn:adsk.eagle:component:24706/2" prefix="K" library_version="5">
-<description>&lt;b&gt;ULTRA-MINIATURE LOW PROFILE AUTOMOTIVE RELAY&lt;/b&gt; NAiS&lt;p&gt;
-Source: http://www.mew-europe.com/.. en_ds_61207_0000.pdf</description>
-<gates>
-<gate name="1" symbol="K" x="-10.16" y="0" addlevel="must"/>
-<gate name="2" symbol="U" x="10.16" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="CP1">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-<connect gate="2" pin="O" pad="NC"/>
-<connect gate="2" pin="P" pad="C"/>
-<connect gate="2" pin="S" pad="NO"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24447/1"/>
-</package3dinstances>
-<technologies>
-<technology name="12V">
-<attribute name="MF" value="AROMAT/ MATSUSHITA" constant="no"/>
-<attribute name="MPN" value="CP1-12V" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="10C5508" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SA" package="CP1SA">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-<connect gate="2" pin="O" pad="NC"/>
-<connect gate="2" pin="P" pad="C"/>
-<connect gate="2" pin="S" pad="NO"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24446/1"/>
-</package3dinstances>
-<technologies>
-<technology name="12V">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="CP1SA-12V-X" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="96K2384" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="dc-dc-converter" urn="urn:adsk.eagle:library:208">
 <description>&lt;b&gt;DC-DC Converters&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -5786,6 +5626,67 @@ wave soldering</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="JW_RELAY01">
+<description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eichhoff
+&lt;li&gt;Finder
+&lt;li&gt;Fujitsu
+&lt;li&gt;HAMLIN
+&lt;li&gt;OMRON
+&lt;li&gt;Matsushita
+&lt;li&gt;NAiS
+&lt;li&gt;Siemens
+&lt;li&gt;Schrack
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="JW_RELAY_BOSCH01">
+<wire x1="-10.16" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="4.318" x2="-7.62" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="1.016" x2="-6.604" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="1.016" x2="-5.588" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="1.016" x2="-5.588" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="4.318" x2="-6.604" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="4.318" x2="-7.62" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-7.366" y1="3.556" x2="-5.588" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="4.318" x2="-6.604" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="0" x2="-12.7" y2="0" width="0.254" layer="94"/>
+<circle x="-2.54" y="4.572" radius="0.567959375" width="0.254" layer="94"/>
+<text x="-13.716" y="6.096" size="1.778" layer="95">85</text>
+<text x="-13.716" y="-2.54" size="1.778" layer="95">86</text>
+<text x="-7.366" y="8.636" size="1.778" layer="95">87</text>
+<text x="3.556" y="8.636" size="1.778" layer="95">87a</text>
+<text x="1.27" y="-4.826" size="1.778" layer="95">30</text>
+<wire x1="-6.604" y1="0" x2="-6.604" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<circle x="2.54" y="4.572" radius="0.567959375" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="3.556" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JW_RELAY_BOSCH01">
+<gates>
+<gate name="G$1" symbol="JW_RELAY_BOSCH01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5799,7 +5700,6 @@ wave soldering</description>
 <schematic_group name="RELAY"/>
 </groups>
 <parts>
-<part name="K1" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="CP1?-*" device="" package3d_urn="urn:adsk.eagle:package:24447/1" technology="12V"/>
 <part name="12V-5V_CONVERTER" library="dc-dc-converter" library_urn="urn:adsk.eagle:library:208" deviceset="DC213R" device="" package3d_urn="urn:adsk.eagle:package:12311/1"/>
 <part name="TB1" library="ARDUINO_NANO" deviceset="ARDUINO_NANO" device=""/>
 <part name="GPS" library="SparkFun-GPS" library_urn="urn:adsk.eagle:library:518" deviceset="ANTENNA" device="GPS-2X7MM" package3d_urn="urn:adsk.eagle:package:38594/1" value="1.575GHz"/>
@@ -5810,21 +5710,24 @@ wave soldering</description>
 <part name="SWITCH" library="switch-alps" library_urn="urn:adsk.eagle:library:373" deviceset="EC12E_SW" device="" package3d_urn="urn:adsk.eagle:package:27083/1"/>
 <part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="TIP122*" device="" package3d_urn="urn:adsk.eagle:package:28520/1"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5400" device="" package3d_urn="urn:adsk.eagle:package:43365/2"/>
-<part name="10K_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
+<part name="4M_OHMS" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0411/15" package3d_urn="urn:adsk.eagle:package:23568/2"/>
 <part name="A42" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="NPN-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2"/>
+<part name="U$2" library="JW_RELAY01" deviceset="JW_RELAY_BOSCH01" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-41.402" y="29.464" size="1.778" layer="91">Kill line in (20A max)</text>
-<text x="-41.402" y="19.558" size="1.778" layer="91">Kill line out (20A max)</text>
-<text x="-41.402" y="50.038" size="1.778" layer="91">Starter switch line in</text>
+<text x="-49.022" y="39.624" size="1.778" layer="91">Kill line in (20A max) (RED)</text>
+<text x="-49.022" y="24.638" size="1.778" layer="91">Kill line out (20A max) (BLUE)</text>
+<text x="-49.022" y="52.578" size="1.778" layer="91">Trigger (YELLOW)</text>
 <text x="-41.402" y="67.564" size="1.778" layer="91">Battery +</text>
 <text x="-41.402" y="62.484" size="1.778" layer="91">Battery -</text>
+<text x="-6.096" y="44.196" size="1.778" layer="91">&lt;jumper&gt;</text>
+<text x="21.336" y="16.51" size="1.778" layer="91">(BLACK)</text>
+<text x="-8.89" y="9.652" size="1.778" layer="91">PCB Input X1a</text>
+<text x="24.13" y="9.398" size="1.778" layer="91">PCB Input X1b</text>
 </plain>
 <instances>
-<instance part="K1" gate="1" x="20.32" y="20.32" smashed="yes" rot="R180" grouprefs="RELAY"/>
-<instance part="K1" gate="2" x="7.62" y="22.86" smashed="yes" rot="R180" grouprefs="RELAY"/>
 <instance part="12V-5V_CONVERTER" gate="G$1" x="7.62" y="63.5" smashed="yes">
 <attribute name="NAME" x="-2.54" y="69.215" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-2.54" y="53.34" size="1.778" layer="96"/>
@@ -5840,7 +5743,7 @@ wave soldering</description>
 <attribute name="NAME" x="107.188" y="96.52" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="U$1" gate="G$1" x="73.66" y="81.28" smashed="yes"/>
-<instance part="D1" gate="1" x="33.02" y="20.32" smashed="yes" rot="R90"/>
+<instance part="D1" gate="1" x="5.08" y="5.08" smashed="yes" rot="R180"/>
 <instance part="1K_OHMS" gate="G$1" x="2.54" y="-10.16" smashed="yes">
 <attribute name="NAME" x="-3.81" y="-13.7414" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1.27" y="-13.462" size="1.778" layer="96"/>
@@ -5852,7 +5755,7 @@ wave soldering</description>
 <attribute name="VALUE" x="11.938" y="-6.858" size="1.778" layer="96"/>
 </instance>
 <instance part="D2" gate="1" x="101.6" y="60.96" smashed="yes" rot="R270"/>
-<instance part="10K_OHMS" gate="G$1" x="2.54" y="-30.48" smashed="yes">
+<instance part="4M_OHMS" gate="G$1" x="2.54" y="-30.48" smashed="yes">
 <attribute name="NAME" x="-3.81" y="-34.0614" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1.27" y="-33.782" size="1.778" layer="96"/>
 </instance>
@@ -5860,8 +5763,19 @@ wave soldering</description>
 <attribute name="NAME" x="12.7" y="-27.94" size="1.778" layer="95"/>
 <attribute name="VALUE" x="7.62" y="-25.4" size="1.778" layer="96"/>
 </instance>
+<instance part="U$2" gate="G$1" x="7.62" y="33.02" smashed="yes" rot="R180"/>
 </instances>
 <busses>
+<bus name="B$1">
+<segment>
+<wire x1="-15.24" y1="10.16" x2="-10.16" y2="10.16" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$2">
+<segment>
+<wire x1="17.78" y1="10.16" x2="22.86" y2="10.16" width="0.762" layer="92"/>
+</segment>
+</bus>
 </busses>
 <nets>
 <net name="N$3" class="0">
@@ -5882,17 +5796,8 @@ wave soldering</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="K1" gate="2" pin="P"/>
-<wire x1="7.62" y1="25.4" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="27.94" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
-<junction x="-33.02" y="27.94"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<junction x="-33.02" y="17.78"/>
-<pinref part="K1" gate="2" pin="O"/>
-<wire x1="2.54" y1="17.78" x2="-33.02" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="38.1" x2="-38.1" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-38.1" y="38.1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5927,34 +5832,21 @@ wave soldering</description>
 <wire x1="55.88" y1="2.54" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="K1" gate="1" pin="2"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="C"/>
-<wire x1="33.02" y1="22.86" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="20.32" y="43.18"/>
-<junction x="-33.02" y="48.26"/>
-<wire x1="20.32" y1="48.26" x2="-33.02" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="10K_OHMS" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="43.18" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="K1" gate="1" pin="1"/>
-<wire x1="20.32" y1="15.24" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="A"/>
-<wire x1="33.02" y1="17.78" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
-<junction x="20.32" y="7.62"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="7.62" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="7.62" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="4M_OHMS" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="5.08" x2="-12.7" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-12.7" y="5.08"/>
+<wire x1="-12.7" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-38.1" y="50.8"/>
+<wire x1="20.32" y1="50.8" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="50.8" x2="-38.1" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="43.18" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<junction x="20.32" y="33.02"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -6035,7 +5927,7 @@ wave soldering</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="10K_OHMS" gate="G$1" pin="2"/>
+<pinref part="4M_OHMS" gate="G$1" pin="2"/>
 <pinref part="A42" gate="G$1" pin="B"/>
 <wire x1="7.62" y1="-30.48" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
@@ -6045,6 +5937,22 @@ wave soldering</description>
 <pinref part="SWITCH" gate="G$2" pin="1"/>
 <pinref part="12V-5V_CONVERTER" gate="G$1" pin="+VIN1"/>
 <wire x1="-10.16" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<wire x1="5.08" y1="22.86" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-38.1" y="22.86"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="A"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="5.08" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="27.94" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
+<junction x="20.32" y="5.08"/>
+<wire x1="20.32" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

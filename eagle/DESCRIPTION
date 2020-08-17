@@ -1,0 +1,11 @@
+<b>Van Tracker</b>
+<br>Version 1: initial revision.  Not good because keeping that relay open takes a lot of energy.  Need to only open it WHILE the starter is engaged.
+<br>Version 2: failed attempt to use the connection that the kill switch is breaking AS the SIGNAL to break the connection (yeah it didn't work)
+<br>Version 3: to get kill switch signal use interrupt
+<br>Version 4: to get kill switch signal use a second transistor (safer and simpler than interrupt)
+<br>Version 5: add diode going to Arduino +5V pin so we can turn system off and update Arduino via USB.  Removed fence and kill switch LEDs
+<br>Version 6: add input signal from starter to D2 using voltage divider in order to send text msg when attempt to start while kill switch is on
+<br>Version 7 - Bostig: change voltage divider to transistor. use INPUT_PULLUP in software, so when signal to base of transistor is hot, arduino pin is pulled low.  seems like the best way to protect arduino from car voltage spikes
+<br>Version 8 - Use power from starter to power relay coil
+<br>Version 9 - Use power from starter to power relay coil
+<br>Version 10 - both bostig and stock: 1.change 10K resistor to 4M Ohm 2.make wiring look more like reality so building the hardware is more clear/intuitive including adding jumpers and inputs to PCB
