@@ -1,0 +1,26 @@
+hex holes
+    large
+        5.4 radius
+    small
+        4.45 radius
+
+
+.4mm -> .8mm nozzle
+
+relay holes
+    4.25 -> 4.6
+power holes
+    3.5 -> 3.75
+power switch
+    11 -> 12
+power converter mount holes
+    4 -> 4.5
+
+antenna holes
+    same
+antenna hex holes
+    same
+lid holes
+    same
+sim7000 mount holes
+    same

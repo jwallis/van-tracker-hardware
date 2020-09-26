@@ -1,0 +1,105 @@
+pcb
+    33.72 wide
+    48.60 tall
+    holes
+        diameter - 2.5mm
+        A
+            (2.1,8.88)
+        B
+            (2.8, 46.4)
+        C
+            (30.68, 46.2)
+
+
+screws
+    lid
+        #6 by 5/8" Everbilt Wood Screws Zinc flat (conical) head 282 265
+        3.25mm diameter
+        6.1mm head
+        15mm LOA
+    sim808 holddown
+        #4 by 3/8" Everbilt Sheet Metal Screws Zinc flat (conical) head 403 424
+        2.7mm diameter
+        5mm head
+        8.75mm LOA
+    power supply mounting
+        #12 by 3/8" Everbilt Sheet Metal Screws Zinc panhead 991 256
+        5.2mm diameter
+        10.5mm head
+        13.25mm LODA
+
+enclosure
+    wall/floor depth - 5mm
+    inner dimensions
+        width - 33 + 3 + 37 + 3 + 22 = 98
+        length - 40 + 4 + 37 = 81
+        height - 66 + 2 = 68
+
+
+antennas
+    hole diameter - 6.5mm
+
+relay
+    harness
+        width - 33mm
+        height - 
+    body
+        width - 28mm
+        height - 31.5mm (28+3.5)
+        depth - 25mm
+            plus terminal length - 11.5mm
+    wire hole diameter - 3.5mm
+
+
+12v to 5v converter
+    wire hole diameter - ?
+    height - 27mm
+    width - 64mm
+    depth - 14mm
+    hole diameter - 4mm
+
+on / off switch
+    hole diameter - 11mm
+
+nano
+    opening all the way through
+        width - 10mm
+        height - 6mm
+        hole center to floor - 8.25
+    opening part of the way through
+        depth - 3mm
+    rear platform
+        distance from wall - 36mm
+        thickness - 4mm
+        height - 5mm
+        width - 18mm
+    rear backstop
+        distance from wall - 40mm
+        thickness - 4mm
+        height - 7mm
+        width - 18mm
+    platform
+        outer width - 18mm
+        wall - 2mm
+        height - 5mm
+        right side depth (looking from inside of box) - 11mm
+        left side depth (looking from inside of box) - 22mm
+
+808 breakout
+    width - 37.25mm
+    height - 37.25mm
+    mounting hole
+        diameter - 2mm
+        hose center to wall - 3mm
+        height - 10mm
+
+
+
+40,86
+5,10
+65,10
+98,45
+
+
+
+
